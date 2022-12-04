@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background: url("../img/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.board{
+    background: linear-gradient(rgb(96, 168, 96),rgb(231, 231, 116));
+    height:80vmin;
+    width: 80vmin;
+    border:5px solid black;  
+    display:grid; 
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+
+}
+
+#startgame{
+    border:3px solid white;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 4vmin;
+    font-family: Lobster;
+    align-self: center;
+    position:absolute;
+    justify-self: center;
+    width:max-content;
+    top:30vh;
+    height: 5vmin;
+
+
+}
+#startgame:hover{
+    background-color: rgb(239, 133, 34);
+    cursor: pointer;
+}
+#highscore:hover{
+    background-color: rgb(239, 133, 34);
+    cursor: pointer;
+}
+#highscore{
+    border:3px solid white;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 4vmin;
+    font-family: Lobster;
+    position:absolute;
+    align-self: center;
+    justify-self: center;
+    width:max-content;
+    top:45vh;
+    height: 5vmin;
+}
+
+#score{
+    position:absolute;
+    top: 10px;
+    right:10vw;
+    font-weight: bold;
+    font-size: 5vmin;
+    font-family: Lobster;
+}
+#highScoreBox{
+    position:absolute;
+    top:10px;
+    right:80vw;
+    font-weight: bold;
+    font-size: 3vmin;
+    font-family: Lobster;
+}
+
+
+.snakeHead{
+    background-color: rgb(175, 45, 52);
+    background-size: 100%;
+    border: 2px solid rgb(155, 95, 95);
+    border-radius: 3px;
+}
+.snakeBody{
+    background-color: rgb(153, 153, 37);
+    border: .25vmin solid white;
+    border-radius: 6px;
+}
+.food{
+    background-color: green;
+    border: .25vmin solid black;
+    border-radius:2vmin;
+}
